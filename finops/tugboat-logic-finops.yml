@@ -9,16 +9,16 @@ reconciled: false
 tags:
 - GRC
 - Compliance
-- Security
-- Trust
 - SOC 2
+- ISO 27001
+- Security
 - FinOps
 - Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for Tugboat Logic. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: FOCUS-aligned FinOps profile. Tugboat Logic is now part of OneTrust enterprise subscriptions.
+notes: Billing handled via OneTrust master subscription agreement.
 sources:
-- https://www.tugboatlogic.com/
+- https://www.onetrust.com/products/certification-automation/
 - https://focus.finops.org/focus-specification/v1-3/
 alignedWith:
   framework: FinOps Foundation Framework
@@ -27,31 +27,29 @@ alignedWith:
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 publisherName: Tugboat Logic
-serviceCategory: GRC
+serviceCategory: Compliance & Governance
 billingModel:
-  pricingCategory: To Be Reconciled
-  billingFrequency: Monthly
+  pricingCategory: Subscription
+  billingFrequency: Annual
   billingCurrency: USD
   chargeCategories:
-  - Usage
   - Purchase
   - Adjustment
 focusColumns:
   ServiceName: Tugboat Logic
-  ServiceCategory: GRC
+  ServiceCategory: Compliance & Governance
   ProviderName: Tugboat Logic
   PublisherName: Tugboat Logic
   InvoiceIssuerName: Tugboat Logic
   BillingCurrency: USD
   ChargeCategory: Usage
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: subscription
+  description: Annual subscription via OneTrust master agreement.
+  unit: subscription
   aggregation: sum
   dimensions:
   - account
-  - resource
 principles:
 - name: Visibility
   description: Pull provider invoices or usage exports until a self-serve usage feed is documented.

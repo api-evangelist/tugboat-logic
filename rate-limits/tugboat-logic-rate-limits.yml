@@ -9,24 +9,25 @@ reconciled: false
 tags:
 - GRC
 - Compliance
-- Security
-- Trust
 - SOC 2
+- ISO 27001
+- Security
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for Tugboat Logic. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: Rate limits, if any, are governed by the OneTrust developer platform; specific Tugboat Logic
+  API quotas are not publicly published.
+notes: Refer to OneTrust developer documentation for any platform-wide limits.
 sources:
-- https://www.tugboatlogic.com/
+- https://developer.onetrust.com/
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+- name: Default (via OneTrust)
+  scope: tenant
+  metric: requests
+  limit: not publicly documented
+  notes: Use OneTrust developer support for tenant-specific limits.
 policies:
 - name: Backoff Strategy
   description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
