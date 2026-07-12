@@ -33,6 +33,10 @@ apis:
     - type: Product
       url: https://www.onetrust.com/products/certification-automation/
 common:
+  - type: TrustCenter
+    url: security/tugboat-logic-trust-center.yml
+  - type: DomainSecurity
+    url: security/tugboat-logic-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/tugboat-logic-inc
   - type: Website
