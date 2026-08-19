@@ -27,7 +27,7 @@ tags:
   - Security
 created: '2026-05-08'
 modified: '2026-05-08'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: tugboat-logic:onetrust-platform
     name: Tugboat Logic via OneTrust Developer Platform
