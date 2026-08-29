@@ -6,6 +6,17 @@ description: Tugboat Logic is a security assurance and compliance automation pla
   in 2021. It supports SOC 2, ISO 27001, HIPAA, GDPR, and NIST. As of 2024, the product has been rebranded
   under OneTrust's Certification Automation offering; legacy Tugboat Logic APIs are not publicly documented
   and integrations now flow through OneTrust's developer platform.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: unknown
