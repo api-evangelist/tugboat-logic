@@ -56,6 +56,11 @@ apis:
     - type: Product
       url: https://www.onetrust.com/products/certification-automation/
 common:
+  - type: ParentCompany
+    url: https://apis.io/providers/onetrust/
+    name: OneTrust
+    x-relationship: acquired
+    x-evidence: "Tugboat Logic is a security assurance and compliance automation platform acquired by OneTrust in 2021."
   - type: TrustCenter
     url: security/tugboat-logic-trust-center.yml
   - type: DomainSecurity
